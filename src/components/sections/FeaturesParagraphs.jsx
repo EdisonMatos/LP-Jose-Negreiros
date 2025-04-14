@@ -11,7 +11,7 @@ import IconButtonFeatureCard from "../cards/IconButtonFeatureCard";
 export default function FeaturesParagraphs({ modal }) {
   return (
     <>
-      <SectionArea id="service" className="">
+      <SectionArea id="service" className="squares">
         <SectionHeader
           className="text-center"
           miniTitle={content.texts.features.miniTag}
