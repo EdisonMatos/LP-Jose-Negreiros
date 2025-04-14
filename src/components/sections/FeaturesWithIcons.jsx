@@ -34,6 +34,28 @@ export default function FeaturesWithIcons() {
                 paragraph={content.texts.features.card2.subtitle}
               />
             </MotionDivDownToUp>
+            <MotionDivDownToUp>
+              <IconFeatureCard
+                icon={content.texts.features.card3.icon}
+                title={content.texts.features.card3.title}
+                paragraph={content.texts.features.card3.subtitle}
+                className="tablet1:mb-[16px] desktop1:mb-0 desktop2:mb-[46px]"
+              />
+            </MotionDivDownToUp>
+            <MotionDivDownToUp>
+              <IconFeatureCard
+                icon={content.texts.features.card4.icon}
+                title={content.texts.features.card4.title}
+                paragraph={content.texts.features.card4.subtitle}
+              />
+            </MotionDivDownToUp>
+            <MotionDivDownToUp>
+              <IconFeatureCard
+                icon={content.texts.features.card5.icon}
+                title={content.texts.features.card5.title}
+                paragraph={content.texts.features.card5.subtitle}
+              />
+            </MotionDivDownToUp>
           </div>
 
           <MotionDivDownToUp className="hidden desktop1:flex justify-center w-[32%]">
