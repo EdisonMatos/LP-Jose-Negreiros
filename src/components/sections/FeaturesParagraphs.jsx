@@ -11,7 +11,7 @@ import IconButtonFeatureCard from "../cards/IconButtonFeatureCard";
 export default function FeaturesParagraphs({ modal }) {
   return (
     <>
-      <SectionArea id="service" className="">
+      <SectionArea id="service" className="squares">
         <SectionHeader
           className="text-center"
           miniTitle={content.texts.features.miniTag}
@@ -23,7 +23,7 @@ export default function FeaturesParagraphs({ modal }) {
         <SectionWrapper>
           <div className="flex flex-col items-center w-full justify-evenly tablet1:flex-row">
             <div className="flex flex-wrap items-start justify-center w-full gap-[40px]">
-              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] ">
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%] ">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card1.icon}
                   title={content.texts.features.card1.title}
@@ -32,7 +32,7 @@ export default function FeaturesParagraphs({ modal }) {
                 />
                 <Button
                   size="small"
-                  label={content.texts.features.card1.labelButton}
+                  label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
                   icon={
                     <svg
@@ -53,7 +53,7 @@ export default function FeaturesParagraphs({ modal }) {
                   }
                 />
               </MotionDivDownToUp>
-              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card2.icon}
                   title={content.texts.features.card2.title}
@@ -62,7 +62,7 @@ export default function FeaturesParagraphs({ modal }) {
                 />
                 <Button
                   size="small"
-                  label={content.texts.features.card2.labelButton}
+                  label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
                   icon={
                     <svg
@@ -83,7 +83,7 @@ export default function FeaturesParagraphs({ modal }) {
                   }
                 />
               </MotionDivDownToUp>{" "}
-              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card3.icon}
                   title={content.texts.features.card3.title}
@@ -92,7 +92,7 @@ export default function FeaturesParagraphs({ modal }) {
                 />
                 <Button
                   size="small"
-                  label={content.texts.features.card3.labelButton}
+                  label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
                   icon={
                     <svg
@@ -113,7 +113,7 @@ export default function FeaturesParagraphs({ modal }) {
                   }
                 />
               </MotionDivDownToUp>{" "}
-              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card4.icon}
                   title={content.texts.features.card4.title}
@@ -122,7 +122,7 @@ export default function FeaturesParagraphs({ modal }) {
                 />
                 <Button
                   size="small"
-                  label={content.texts.features.card4.labelButton}
+                  label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
                   icon={
                     <svg
@@ -143,7 +143,7 @@ export default function FeaturesParagraphs({ modal }) {
                   }
                 />
               </MotionDivDownToUp>{" "}
-              {/* <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card5.icon}
                   title={content.texts.features.card5.title}
@@ -172,8 +172,8 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "} */}
-              {/* <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+              </MotionDivDownToUp>{" "}
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card6.icon}
                   title={content.texts.features.card6.title}
@@ -202,8 +202,8 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "} */}
-              {/* <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+              </MotionDivDownToUp>{" "}
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card7.icon}
                   title={content.texts.features.card7.title}
@@ -232,8 +232,8 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "} */}
-              {/* <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%]">
+              </MotionDivDownToUp>{" "}
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card8.icon}
                   title={content.texts.features.card8.title}
@@ -262,7 +262,67 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp> */}
+              </MotionDivDownToUp>
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
+                <IconButtonFeatureCard
+                  icon={content.texts.features.card9.icon}
+                  title={content.texts.features.card9.title}
+                  paragraph={content.texts.features.card9.subtitle}
+                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
+                />
+                <Button
+                  size="small"
+                  label="Saber Mais"
+                  buttonLink={content.texts.links.ctaWhatsapp}
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-corner-down-right"
+                    >
+                      <polyline points="15 10 20 15 15 20" />
+                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                    </svg>
+                  }
+                />
+              </MotionDivDownToUp>
+              <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
+                <IconButtonFeatureCard
+                  icon={content.texts.features.card10.icon}
+                  title={content.texts.features.card10.title}
+                  paragraph={content.texts.features.card10.subtitle}
+                  className="tablet1:mb-[12px] desktop1:mb-0 desktop2:mb-[18px]"
+                />
+                <Button
+                  size="small"
+                  label="Saber Mais"
+                  buttonLink={content.texts.links.ctaWhatsapp}
+                  icon={
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-corner-down-right"
+                    >
+                      <polyline points="15 10 20 15 15 20" />
+                      <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                    </svg>
+                  }
+                />
+              </MotionDivDownToUp>
             </div>
           </div>
         </SectionWrapper>
