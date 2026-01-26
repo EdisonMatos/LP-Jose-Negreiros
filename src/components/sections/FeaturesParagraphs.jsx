@@ -1,12 +1,12 @@
-import "primeicons/primeicons.css";
-import content from "../../content/content";
-import Button from "../interactives/Button";
-import "primereact/resources/primereact.min.css";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionHeader from "../sectionElements/SectionHeader";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import IconButtonFeatureCard from "../cards/IconButtonFeatureCard";
+import 'primeicons/primeicons.css'
+import content from '../../content/content'
+import Button from '../interactives/Button'
+import 'primereact/resources/primereact.min.css'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionHeader from '../sectionElements/SectionHeader'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import IconButtonFeatureCard from '../cards/IconButtonFeatureCard'
 
 export default function FeaturesParagraphs({ modal }) {
   return (
@@ -34,6 +34,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +65,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +84,7 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "}
+              </MotionDivDownToUp>{' '}
               <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white w-full  tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card3.icon}
@@ -94,6 +96,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +115,7 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "}
+              </MotionDivDownToUp>{' '}
               <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white w-full  tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card4.icon}
@@ -124,6 +127,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +146,7 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "}
+              </MotionDivDownToUp>{' '}
               <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white w-full  tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card5.icon}
@@ -154,6 +158,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +177,7 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "}
+              </MotionDivDownToUp>{' '}
               <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white w-full  tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card6.icon}
@@ -184,6 +189,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +208,7 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "}
+              </MotionDivDownToUp>{' '}
               <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white w-full  tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card7.icon}
@@ -214,6 +220,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +239,7 @@ export default function FeaturesParagraphs({ modal }) {
                     </svg>
                   }
                 />
-              </MotionDivDownToUp>{" "}
+              </MotionDivDownToUp>{' '}
               <MotionDivDownToUp className="flex flex-col items-center justify-center border-[2px] border-solid px-[10px] py-[20px] rounded-md bg-white w-full  tablet1:w-[46.5%] desktop1:w-[30%] desktop2:w-[20%]">
                 <IconButtonFeatureCard
                   icon={content.texts.features.card8.icon}
@@ -244,6 +251,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -274,6 +282,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -304,6 +313,7 @@ export default function FeaturesParagraphs({ modal }) {
                   size="small"
                   label="Saber Mais"
                   buttonLink={content.texts.links.ctaWhatsapp}
+                  onClick={() => gtag_report_conversion()}
                   icon={
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -328,5 +338,5 @@ export default function FeaturesParagraphs({ modal }) {
         </SectionWrapper>
       </SectionArea>
     </>
-  );
+  )
 }
