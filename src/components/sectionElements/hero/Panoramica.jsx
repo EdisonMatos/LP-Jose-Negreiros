@@ -1,31 +1,31 @@
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import content from "../../../content/content";
-import Button from "../../interactives/Button";
-import { FaWhatsapp } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
-import "../../../styles/shapeDivs.css";
-import SectionArea from "../SectionArea";
-import SectionWrapper from "../SectionWrapper";
+import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
+import content from '../../../content/content'
+import Button from '../../interactives/Button'
+import { FaWhatsapp } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import '../../../styles/shapeDivs.css'
+import SectionArea from '../SectionArea'
+import SectionWrapper from '../SectionWrapper'
 
 export default function Panoramica({ appDownloadButtons }) {
-  const navigate = useNavigate();
-  const [bgImage, setBgImage] = useState(content.texts.hero.heroImgPhone);
+  const navigate = useNavigate()
+  const [bgImage, setBgImage] = useState(content.texts.hero.heroImgPhone)
 
   useEffect(() => {
     const handleResize = () => {
       setBgImage(
         window.innerWidth < 1024
           ? content.texts.hero.heroImgPhone
-          : content.texts.hero.heroImg
-      );
-    };
+          : content.texts.hero.heroImg,
+      )
+    }
 
-    handleResize(); // Definir a imagem correta ao carregar a página
-    window.addEventListener("resize", handleResize);
+    handleResize() // Definir a imagem correta ao carregar a página
+    window.addEventListener('resize', handleResize)
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, [content]);
+    return () => window.removeEventListener('resize', handleResize)
+  }, [content])
 
   return (
     <>
@@ -63,7 +63,7 @@ export default function Panoramica({ appDownloadButtons }) {
                     <Button
                       aria-label={content.texts.hero.ctaButtonAriaLabel}
                       label={content.texts.hero.ctaButtonText}
-                      // onClick={() => navigate("/whatsapp")}
+                      onClick={() => gtag_report_conversion()}
                       buttonLink={content.texts.links.ctaWhatsapp}
                       animation
                       className="w-[100%]"
@@ -87,7 +87,7 @@ export default function Panoramica({ appDownloadButtons }) {
                           {content.texts.hero.app.description}
                         </p>
                         <div className="">
-                          {" "}
+                          {' '}
                           <div className="flex items-start gap-[20px]">
                             <a
                               href={content.texts.hero.app.imgs.appStore.link}
@@ -124,7 +124,7 @@ export default function Panoramica({ appDownloadButtons }) {
                     className="bg-center bg-top rounded-xl w-full h-[350px] tablet1:h-[380px] desktop1:h-[500px] desktop1:w-[500px] bg-cover bg-no-repeat tablet1:shadow-custom-opacity tablet1:shadow-black/30"
                     style={{
                       backgroundImage: `url(${content.texts.hero.heroDefaultImage})`,
-                      backgroundSize: "",
+                      backgroundSize: '',
                     }}
                   ></div>
                 </MotionDivDownToUp>
@@ -178,7 +178,7 @@ export default function Panoramica({ appDownloadButtons }) {
                         <Button
                           aria-label={content.texts.hero.ctaButtonAriaLabel}
                           label={content.texts.hero.ctaButtonText}
-                          // onClick={() => navigate("/whatsapp")}
+                          onClick={() => gtag_report_conversion()}
                           buttonLink={content.texts.links.ctaWhatsapp}
                           animation
                           className="w-[100%]"
@@ -202,7 +202,7 @@ export default function Panoramica({ appDownloadButtons }) {
                               {content.texts.hero.app.description}
                             </p>
                             <div className="">
-                              {" "}
+                              {' '}
                               <div className="flex items-start gap-[20px]">
                                 <a
                                   href={
@@ -252,5 +252,5 @@ export default function Panoramica({ appDownloadButtons }) {
         </SectionArea>
       </div>
     </>
-  );
+  )
 }

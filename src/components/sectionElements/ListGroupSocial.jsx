@@ -1,45 +1,45 @@
-import { Link } from "react-scroll";
-import content from "../../content/content";
-import { useState, useEffect } from "react";
-import IconButton from "../interactives/IconButton";
-import Button from "../interactives/Button";
-import { useNavigate } from "react-router-dom";
+import { Link } from 'react-scroll'
+import content from '../../content/content'
+import { useState, useEffect } from 'react'
+import IconButton from '../interactives/IconButton'
+import Button from '../interactives/Button'
+import { useNavigate } from 'react-router-dom'
 
 export default function ListGroupSocial({ LightMode }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
-  const [scrolling, setScrolling] = useState(false);
-  const [showSubMenu, setShowSubMenu] = useState(false);
+  const [scrolling, setScrolling] = useState(false)
+  const [showSubMenu, setShowSubMenu] = useState(false)
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
-      setScrolling(true);
+      setScrolling(true)
     } else {
-      setScrolling(false);
+      setScrolling(false)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   const toggleSubMenu = (show) => {
-    setShowSubMenu(show);
-  };
+    setShowSubMenu(show)
+  }
 
   return (
     <ul
       className={`h-14 hidden desktop1:flex my-auto items-center justify-end tablet1:items-center desktop1:gap-8 desktop2:gap-8 w-full font-normal text-paragraph3 font-secondFont ${
         LightMode
           ? scrolling
-            ? "text-black"
-            : "text-black"
+            ? 'text-black'
+            : 'text-black'
           : scrolling
-          ? "text-lighter"
-          : "text-white transition-color duration-1000"
+            ? 'text-lighter'
+            : 'text-white transition-color duration-1000'
       }`}
     >
       <li className="transition group h-[24px] ">
@@ -57,11 +57,11 @@ export default function ListGroupSocial({ LightMode }) {
               ${
                 LightMode
                   ? scrolling
-                    ? "hover:text-black"
-                    : "hover:text-white"
+                    ? 'hover:text-black'
+                    : 'hover:text-white'
                   : scrolling
-                  ? "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
-                  : "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
+                    ? 'hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
+                    : 'hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
               } `}
           >
             {content.texts.navbar.menuItems[0]}
@@ -70,11 +70,11 @@ export default function ListGroupSocial({ LightMode }) {
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
               LightMode
                 ? scrolling
-                  ? "bg-black"
-                  : "bg-white"
+                  ? 'bg-black'
+                  : 'bg-white'
                 : scrolling
-                ? "bg-lighter"
-                : "bg-lighter"
+                  ? 'bg-lighter'
+                  : 'bg-lighter'
             }`}
           ></div>
         </Link>
@@ -95,11 +95,11 @@ export default function ListGroupSocial({ LightMode }) {
               ${
                 LightMode
                   ? scrolling
-                    ? "hover:text-black"
-                    : "hover:text-white"
+                    ? 'hover:text-black'
+                    : 'hover:text-white'
                   : scrolling
-                  ? "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
-                  : "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
+                    ? 'hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
+                    : 'hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
               } `}
           >
             {content.texts.navbar.menuItems[1]}
@@ -108,11 +108,11 @@ export default function ListGroupSocial({ LightMode }) {
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
               LightMode
                 ? scrolling
-                  ? "bg-black"
-                  : "bg-white"
+                  ? 'bg-black'
+                  : 'bg-white'
                 : scrolling
-                ? "bg-lighter"
-                : "bg-lighter"
+                  ? 'bg-lighter'
+                  : 'bg-lighter'
             }`}
           ></div>
         </Link>
@@ -132,11 +132,11 @@ export default function ListGroupSocial({ LightMode }) {
               ${
                 LightMode
                   ? scrolling
-                    ? "hover:text-black"
-                    : "hover:text-white"
+                    ? 'hover:text-black'
+                    : 'hover:text-white'
                   : scrolling
-                  ? "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
-                  : "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
+                    ? 'hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
+                    : 'hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
               } `}
           >
             {content.texts.navbar.menuItems[2]}
@@ -145,11 +145,11 @@ export default function ListGroupSocial({ LightMode }) {
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
               LightMode
                 ? scrolling
-                  ? "bg-black"
-                  : "bg-white"
+                  ? 'bg-black'
+                  : 'bg-white'
                 : scrolling
-                ? "bg-lighter"
-                : "bg-lighter"
+                  ? 'bg-lighter'
+                  : 'bg-lighter'
             }`}
           ></div>
         </Link>
@@ -169,11 +169,11 @@ export default function ListGroupSocial({ LightMode }) {
               ${
                 LightMode
                   ? scrolling
-                    ? "hover:text-black"
-                    : "hover:text-white"
+                    ? 'hover:text-black'
+                    : 'hover:text-white'
                   : scrolling
-                  ? "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
-                  : "hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]"
+                    ? 'hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
+                    : 'hover:text-lighter [text-shadow:_2px_2px_3px_rgb(0_0_0_/_0%)]'
               } `}
           >
             {content.texts.navbar.menuItems[3]}
@@ -182,11 +182,11 @@ export default function ListGroupSocial({ LightMode }) {
             className={`absolute -bottom-2 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
               LightMode
                 ? scrolling
-                  ? "bg-black"
-                  : "bg-white"
+                  ? 'bg-black'
+                  : 'bg-white'
                 : scrolling
-                ? "bg-lighter"
-                : "bg-lighter"
+                  ? 'bg-lighter'
+                  : 'bg-lighter'
             }`}
           ></div>
         </Link>
@@ -196,9 +196,9 @@ export default function ListGroupSocial({ LightMode }) {
           <Button
             aria-label={content.texts.hero.ctaButtonAriaLabel}
             label="Contato"
-            // onClick={() => navigate("/whatsapp")}
+            onClick={() => gtag_report_conversion()}
             buttonLink={content.texts.links.ctaWhatsapp}
-            className={`${scrolling ? "" : ""}`}
+            className={`${scrolling ? '' : ''}`}
             textclassName="text-paragraph3"
             size="small"
             icon={
@@ -298,5 +298,5 @@ export default function ListGroupSocial({ LightMode }) {
         </div>
       </li>
     </ul>
-  );
+  )
 }
