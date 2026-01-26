@@ -1,14 +1,14 @@
-import content from "../../content/content";
-import { useNavigate } from "react-router-dom";
-import Paragraphs from "../sectionElements/Paragraphs";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionHeader from "../sectionElements/SectionHeader";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import AccordionExpandDefault from "../interactives/AcordionTwo";
+import content from '../../content/content'
+import { useNavigate } from 'react-router-dom'
+import Paragraphs from '../sectionElements/Paragraphs'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionHeader from '../sectionElements/SectionHeader'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import AccordionExpandDefault from '../interactives/AcordionTwo'
 
 export default function Faq() {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -30,8 +30,12 @@ export default function Faq() {
           <MotionDivDownToUp>
             <Paragraphs className="text-center underline transition text-secondary hover:scale-110">
               {/* <a href="/whatsapp" target="_blank" rel="noopener noreferrer"> */}
-              <a href={content.texts.links.ctaWhatsapp} target="_blank">
-                {" "}
+              <a
+                onClick={() => gtag_report_conversion()}
+                href={content.texts.links.ctaWhatsapp}
+                target="_blank"
+              >
+                {' '}
                 {content.texts.faq.paragraph}
               </a>
             </Paragraphs>
@@ -39,5 +43,5 @@ export default function Faq() {
         </SectionWrapper>
       </SectionArea>
     </>
-  );
+  )
 }

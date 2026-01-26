@@ -1,15 +1,15 @@
-import Button from "../interactives/Button";
-import content from "../../content/content";
-import { FaWhatsapp } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionHeader from "../sectionElements/SectionHeader";
-import SectionWrapper from "../sectionElements/SectionWrapper";
+import Button from '../interactives/Button'
+import content from '../../content/content'
+import { FaWhatsapp } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionHeader from '../sectionElements/SectionHeader'
+import SectionWrapper from '../sectionElements/SectionWrapper'
 
-const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
+const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`
 
 export default function Cta() {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -25,7 +25,7 @@ export default function Cta() {
           <Button
             aria-label={content.texts.hero.ctaButtonAriaLabel}
             label={content.texts.cta.ctaButtonText}
-            // onClick={() => navigate("/whatsapp")}
+            onClick={() => gtag_report_conversion()}
             buttonLink={content.texts.links.ctaWhatsapp}
             animation
             icon={<FaWhatsapp size={24} />}
@@ -51,5 +51,5 @@ export default function Cta() {
 
 Fim de onda shape div */}
     </>
-  );
+  )
 }
