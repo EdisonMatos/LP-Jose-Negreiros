@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -152,43 +152,30 @@
       src="https://www.googletagmanager.com/gtag/js?id=AW-17029326058"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || []
+      window.dataLayer = window.dataLayer || [];
       function gtag() {
-        dataLayer.push(arguments)
+        dataLayer.push(arguments);
       }
-      gtag('js', new Date())
-      gtag('config', 'AW-17029326058')
-    </script>
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-17029326058"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'AW-17029326058')
+      gtag("js", new Date());
+      gtag("config", "AW-17029326058");
     </script>
 
     <!-- Event snippet for Clique Botão CTA conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <!-- Event snippet for Clique Botão CTA Whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function gtag_report_conversion(url) {
-        console.log('Conversão disparada')
         var callback = function () {
-          if (typeof url != 'undefined') {
-            window.location = url
+          if (typeof url != "undefined") {
+            window.location = url;
           }
-        }
-        gtag('event', 'conversion', {
-          send_to: 'AW-17029326058/pWkOCODK9-wbEOrJm7g_',
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-17029326058/K9IHCObElu0bEOrJm7g_",
           event_callback: callback,
-        })
-        return false
+        });
+        return false;
       }
     </script>
   </head>
